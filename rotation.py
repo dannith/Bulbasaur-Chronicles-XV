@@ -68,7 +68,7 @@ class Bulbasaur(pygame.sprite.Sprite):
             }
         }
         self.getSprite()
-        
+
     def rotate(self, deg):
         self.rotation += deg
         if self.rotation > 360:
