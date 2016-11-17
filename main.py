@@ -54,7 +54,8 @@ while running:
     event = pygame.event.poll()
     clock.tick(60)
     screen.fill((0, 100, 0))
-    screen.blit(b.frames["back"][counter], (10, loc))
+    screen.blit(b.frames["sideFront"][counter], (20, loc))
+    screen.blit(pygame.transform.flip(b.frames["sideFront"][counter], True, False), (loc, loc))
     loc += 1
     if loc == 600:
         loc = -22
